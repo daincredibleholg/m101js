@@ -1,0 +1,5 @@
+After importing the CSV file as described, execute the following command:
+
+db.data.find({'Wind Direction': {'$gte': 180, '$lte': 360}}, {'State': true, 'Temperature': true }).sort({ 'Temperature': 1 }).limit(1);
+
+This will bring up the State name, we are looking for: New Mexico

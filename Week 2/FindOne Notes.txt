@@ -1,0 +1,15 @@
+FindOne: findOne(match, fields)
+ 
+* match
+** specified as JSON document and works as a filter
+** using operators (constraints) is quite easy
+*** example for greater than: db.example.find({'score': {$gt: 95}});
+*** if several constraints should apply, simply add them comma separated: db.example.find({'score': {'$gt': 60, '$lt': 80}});
+** Example : db.example.findOne({'name'"': "Incredible Holg'}); only returns documents where the name field equals 'Incredible Holg'
+
+* fields
+** specifies the fields, the result should contain
+** except _id, one only has to give the fields that are required with the value true
+** _id is always part of the result unless one sets it to false: {'_id': false}
+** example: db.example.findOne({'name': "Incredible Holg"}, {'_id': false, 'name': true})
+*** will return a document where the name value is "Incredible Holg" and will only return the name field and value (say: {'name': "Incredible Holg"})
