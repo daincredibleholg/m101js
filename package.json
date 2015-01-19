@@ -6,7 +6,9 @@
   "dependencies": {
     "consolidate": "~0.9.1",
     "express": "~3.2.6",
-    "mongodb": "~1.3.10"
+    "mongodb": "~1.3.10",
+    "request": "~2.51.0"
+
   },
   "author": "Shaun Verch",
   "license": "BSD"
