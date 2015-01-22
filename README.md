@@ -3,3 +3,4 @@ My M101JS related stuff
 
 
 * Videos Week 1: [[http://www.youtube.com/playlist?list=PLCAM4-OTb6rls9vsH_CD6PP3nCPl3EvtO]]
+* Videos Week 2: [[http://www.youtube.com/playlist?list=PLCAM4-OTb6rnzAXHF6X139Y4RRXvJvHmA]]
