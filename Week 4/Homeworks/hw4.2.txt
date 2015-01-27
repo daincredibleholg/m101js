@@ -1,0 +1,6 @@
+[x] This query performs a collection scan.
+[x] The query uses an index to determine the order in which to return result documents.
+[ ] The query uses an index to determine which documents match.
+[ ]The query returns 46462 documents.
+[x] The query visits 46462 documents.
+[ ] The query is a "covered index query".

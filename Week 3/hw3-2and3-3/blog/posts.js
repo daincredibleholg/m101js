@@ -84,8 +84,15 @@ function PostsDAO(db) {
             comment['email'] = email
         }
 
+
         // hw3.3 TODO
-        callback(Error("addComment NYI"), null);
+        //callback(Error("addComment NYI"), null);
+        var query = {'permalink': permalink};
+        var operator = {'$push': {'comments': comment}};
+
+        posts.update(query, operator, function(err, updated) {
+            return callback(err, updated);
+        });
     }
 }
 
